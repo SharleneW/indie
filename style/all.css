@@ -40,4 +40,8 @@ a { text-decoration: none; }
 .show_result .source::before { content: "資料來源 ｜ "; }
 
 .show_result .location::before { content: "活動地點 ｜ "; }
+
+footer { background-color: #3a3a3a; color: #fff; }
+
+footer p { font-size: 14px; text-align: center; padding: 40px 0; }
 /*# sourceMappingURL=all.css.map */
