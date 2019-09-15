@@ -1,0 +1,170 @@
+// font
+$font-family: "Microsoft JhengHei", PMingLiU, MingLiu, "Segoe UI", "Helvetica",
+  Garuda, Arial, sans-serif;
+$font-size: 16px;
+
+// gutter
+$gutter: 15px;
+
+// color
+$background-color: #fcfbf5;
+$font-color: #333;
+$font-color-gray: lighten($font-color, 55%);
+
+$brand-primary: #039dff;
+$brand-success: #00cc99;
+$brand-accent: #e26789;
+$brand-dark: $font-color;
+$brand-facebook: #4080ff;
+
+// navbar
+$navbar-height: 42px;
+
+// progress
+$progress-height: 20px;
+
+// section
+$section-gutter: 45px;
+
+// zindex
+$navbar-zindex: 1000;
+$fab-zindex: 1045;
+
+// breakpoint
+$mobile-size: 779px;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg {
+  overflow: hidden;
+  background-image: url("../file/aaron-paul-wnX-fXzB6Cw-unsplash.jpg");
+  background-position: center center;
+  background-size: cover;
+  // background-attachment: fixed;
+  -webkit-filter: grayscale(1);
+  // height: 100vh;
+}
+
+.wrap {
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+}
+
+.header_title {
+  width: 100%;
+  padding: 50px 0;
+  text-shadow: 0 0 8px #000;
+  // top: 0;
+  // top: 50%;
+  // transform: translateY(-50%);
+  // left: 0;
+  // bottom: 0;
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  h1 {
+    position: relative;
+    line-height: 1;
+    // text-indent: -10px;
+    color: white;
+    font-size: 2em;
+    float: left;
+    transform: skewY(-6deg);
+    // background-color: rgba(0, 0, 0, 0.5);
+    // margin-bottom: 30px;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 70%;
+      border-bottom: 2px solid #fff;
+    }
+    &::before {
+      left: 0;
+      top: -10px;
+    }
+    &::after {
+      right: 0;
+      bottom: -10px;
+    }
+  }
+  nav {
+    font-size: 0;
+    text-align: right;
+    // position: absolute;
+    // top: 0;
+    // left: 50%;
+    // transform: translateX(-50%);
+    // width: 100%;
+  }
+  a {
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    text-shadow: 0 0 10px #000;
+    margin-top: 4px;
+    padding: 10px 25px 10px 23px;
+    border-bottom: 2px solid rgba(1, 1, 1, 0);
+
+    // background-color: rgba(0, 0, 0, 0.5);
+    transition: all 1s;
+    &:hover {
+      // color: white;
+      border-bottom: 2px solid white;
+    }
+  }
+}
+// .nav_group {
+//   margin-bottom: 30px;
+// }
+.show_result {
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+  li {
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+    padding-bottom: 20px;
+    & + li {
+      padding-top: 20px;
+    }
+  }
+  .date,
+  .source,
+  .location {
+    font-size: 14px;
+  }
+  .date {
+    &::before {
+      content: "活動日期 ｜ ";
+    }
+  }
+  .source {
+    &::before {
+      content: "資料來源 ｜ ";
+    }
+  }
+  .location {
+    &::before {
+      content: "活動地點 ｜ ";
+    }
+  }
+}
